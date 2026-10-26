@@ -19,7 +19,7 @@
 
 function greet(name) {
 
-return "Hello" + name + "!"
+return "Hello, " + name + "!"
 }
 
 
@@ -39,7 +39,7 @@ return "Hello" + name + "!"
 let count = 0;
 
 function myFunc() {
-  count - count + 1
+  count = count + 1
 return count
 }
 
@@ -57,7 +57,7 @@ return count
 // STEP 3: Return the random number.
 
 function getRandomNum(max) {
-if isNaN(max || max < 1){
+if (isNaN(max) || max < 1){
   return 0
 }
   return Math.floor(Math.random() * max) + 1
@@ -99,7 +99,7 @@ y = parseInt(y)
 function distance(x1, y1, x2, y2) {
 
 
-  return  sqrt((x2 - x1)**2 + (y2 - y1)**2).toFixed(2)
+  return  Math.sqrt((x2 - x1)**2 + (y2 - y1)**2).toFixed(2)
 }
 
 
